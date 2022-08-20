@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Library of games</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ma liste de jeux</h1>
+
+      <form>
+        <div class="inputs">
+          <label for="title">Titre</label>
+          <input type="text" name="title" id="title" placeholder="F1 2022" />
+        </div>
+        <div class="inputs">
+          <label for="type">Genre</label>
+          <input type="text" name="type" id="type" placeholder="course" />
+        </div>
+        <div class="inputs">
+          <label for="console">Support</label>
+          <input
+            type="text"
+            name="console"
+            id="console"
+            placeholder="Playstation 5"
+          />
+        </div>
+
+        <button type="submit" class="btn">Ajouter</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Titre</th>
+            <th>Genre</th>
+            <th>Support</th>
+          </tr>
+        </thead>
+        <tbody class="body-table"></tbody>
+      </table>
+
+      <button class="remove">Effacer ma liste</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
