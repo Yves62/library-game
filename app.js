@@ -34,7 +34,7 @@ form.addEventListener("submit", (e) => {
     typeOfGame.value === "" ||
     consoleTyoe.value === ""
   ) {
-    pushNotification(`impossible d'ajouter votre jeu`, "red");
+    pushNotification(`impossible d'ajouter votre jeu, veuillez renseigner tous les champs`, "red");
   }
 });
 
