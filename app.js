@@ -6,6 +6,7 @@ const titleGame = document.querySelector("#title");
 const typeOfGame = document.querySelector("#type");
 const consoleTyoe = document.querySelector("#console");
 const btnClearListOfGames = document.querySelector(".remove");
+let newLineTable;
 
 /**
  * create generic class Game
@@ -52,7 +53,7 @@ function addVideoGames() {
     </tr>
     `;
 
-  listOfGame.append(newLineTable);
+  listOfGame.appendChild(newLineTable);
 }
 
 function resetForm() {
@@ -79,5 +80,5 @@ function pushNotification(message, color) {
 }
 
 function clearTableOfGames() {
-  listOfGame.remove();
+    listOfGame.innerHTML = ""
 }
